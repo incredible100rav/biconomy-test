@@ -152,7 +152,7 @@
               let gasPrice = await web3.eth.getGasPrice();
               let gasLimit = await contract.methods.executeMetaTransaction(account,functionSignature, r, s, v).estimateGas({ from: account });
               console.log({ gasPrice, gasLimit });
-			  //throws error here. Signer and signature do not match
+			  //throws error here. 
               // contract2.methods.executeMetaTransaction(account,functionSignature, r, s, v).send({
               //   from: account,
               //   // maxPriorityFeePerGas: "34000000000",
